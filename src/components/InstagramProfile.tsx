@@ -5,22 +5,28 @@ import { Button } from '@/components/ui/button';
 
 const InstagramProfile = () => {
   const posts = [
-    { id: 1, image: 'https://cdn.aigenta.gr/prosleep/instagram/photo-1649972904349-6e44c42644a7?', likes: 234, comments: 12 },
-    { id: 2, image: 'https://cdn.aigenta.gr/prosleep/instagram/photo-1488590528505-98d2b5aba04b', likes: 156, comments: 8 },
-    { id: 3, image: 'https://cdn.aigenta.gr/prosleep/instagram/photo-1581091226825-a6a2a5aee158?', likes: 89, comments: 5 },
+    { id: 1, image: 'https://cdn.aigenta.gr/prosleep/instagram/POSTS/u8736931857_httpss.mj.run5jtpWQhPGx4_replace_the_blanket_with_cbad1c20-97cf-4919-ae8b-1ab5f0dca25f_3.jpg', likes: 234, comments: 12 },
+    { id: 2, image: 'https://cdn.aigenta.gr/prosleep/instagram/POSTS/u8736931857_httpss.mj.run5jtpWQhPGx4_replace_the_blanket_with_25c92856-d52d-44a0-9718-ccc747041c28_1.jpg', likes: 156, comments: 8 },
+    { id: 3, image: 'https://cdn.aigenta.gr/prosleep/instagram/POSTS/u8736931857_httpss.mj.runO-jT9eBk7tw_A_beautiful_35_years_old_11132c02-9a9a-4cdd-a552-468d2e4299b2_3 (1).jpg', likes: 89, comments: 5 },
     { id: 4, image: 'https://cdn.aigenta.gr/prosleep/instagram/modelokontinotzami.png?', likes: 312, comments: 24 },
     { id: 5, image: 'https://cdn.aigenta.gr/prosleep/instagram/modeloeksoparalia.png?w=400&h=400&fit=crop', likes: 198, comments: 15 },
-    { id: 6, image: 'https://cdn.aigenta.gr/prosleep/instagram/photo-1582562124811-c09040d0a901?w=400&h=400&fit=crop', likes: 276, comments: 18 },
-    { id: 7, image: 'https://cdn.aigenta.gr/prosleep/instagram/photo-1721322800607-8c38375eef04?w=400&h=400&fit=crop', likes: 145, comments: 9 },
-    { id: 8, image: 'https://cdn.aigenta.gr/prosleep/instagram/photo-1649972904349-6e44c42644a7?w=400&h=400&fit=crop', likes: 203, comments: 11 },
-    { id: 9, image: 'https://cdn.aigenta.gr/prosleep/instagram/photo-1488590528505-98d2b5aba04b?w=400&h=400&fit=crop', likes: 167, comments: 7 }
+    { id: 6, image: 'https://cdn.aigenta.gr/prosleep/instagram/POSTS/u8736931857_imagine_organic-modern_cliff-house_bedroom_carved_a92631af-6fa5-4369-933a-d4fb00848848_1.jpg', likes: 276, comments: 18 },
+    { id: 7, image: 'https://cdn.aigenta.gr/prosleep/instagram/POSTS/u8736931857_Sunrise_in_an_ultra-luxury_penthouse_overlooking__46bba741-31ba-49ab-bd2c-001343a654cc_0.jpg', likes: 145, comments: 9 },
+    { id: 8, image: 'https://cdn.aigenta.gr/prosleep/instagram/POSTS/u8736931857_A_young_woman_with_soft_fair_skin_natural_freckle_c37c765a-8d94-444b-885f-64339f1a34fd_2.jpg', likes: 203, comments: 11 },
+    { id: 9, image: 'https://cdn.aigenta.gr/prosleep/instagram/POSTS/u8736931857_httpss.mj.runO-jT9eBk7tw_Wellness_love_life_happy_018ad51c-4309-4079-ac25-6fe96ee81468_2.jpg', likes: 167, comments: 7 },
+    { id: 10, image: 'https://cdn.aigenta.gr/prosleep/instagram/POSTS/u8736931857_imagine_organic-modern_cliff-house_bedroom_carved_a92631af-6fa5-4369-933a-d4fb00848848_1.jpg', likes: 276, comments: 18 },
+    { id: 11, image: 'https://cdn.aigenta.gr/prosleep/instagram/POSTS/u8736931857_httpss.mj.runL0S_n_4ZOMU_Luxury_private-jet_cabin_bf415395-3c52-460f-91e7-fa114db222fc_3.jpg', likes: 145, comments: 9 },
+    { id: 12, image: 'https://cdn.aigenta.gr/prosleep/instagram/POSTS/u8736931857_imagine_organic-modern_cliff-house_bedroom_carved_a92631af-6fa5-4369-933a-d4fb00848848_3 (1).jpg', likes: 203, comments: 11 },
+    { id: 13, image: 'https://cdn.aigenta.gr/prosleep/instagram/POSTS/u8736931857_Sunrise_in_an_ultra-luxury_penthouse_overlooking__01f5b50f-18f2-4e95-9ad5-72d96e8591d9_1.jpg', likes: 167, comments: 7 }
+ 
   ];
 
   const stories = [
-    { id: 1, title: 'Travel', image: 'https://instagram.fath2-1.fna.fbcdn.net/v/t51.2885-15/352770013_311828967840339_3209074074427907536_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=instagram.fath2-1.fna.fbcdn.net&_nc_cat=103&_nc_oc=Q6cZ2QFXcZwbEx1b13Gd5Yas4onuT2azKTdktrsBmgc6o2DBv1MpokABliP45ycezQqqDsxSypt7zHH4xjRTUzaPkOCy&_nc_ohc=2lfOnZvj51kQ7kNvwEELYgP&_nc_gid=fvY0la7r7K2EGtyhr-ti2w&edm=AGFyKLkBAAAA&ccb=7-5&oh=00_AfPyYBWyKsaJ5CyKAsr8cColhFhSJBciAgWSl0lksVJ3Fg&oe=686C4D40&_nc_sid=5a0a6d' },
-    { id: 2, title: 'Food', image: 'https://cdn.aigenta.gr/prosleep/instagram/photo-1488590528505-98d2b5aba04b?w=100&h=100&fit=crop' },
-    { id: 3, title: 'Work', image: 'https://cdn.aigenta.gr/prosleep/instagram/photo-1581091226825-a6a2a5aee158?w=100&h=100&fit=crop' },
-    { id: 4, title: 'Friends', image: 'https://cdn.aigenta.gr/prosleep/instagram/photo-1526374965328-7f61d4dc18c5?w=100&h=100&fit=crop' }
+    { id: 1, title: 'Reviews', image: 'https://cdn.aigenta.gr/prosleep/instagram/reviews.jpg' },
+    { id: 2, title: 'Selfcare', image: 'https://cdn.aigenta.gr/prosleep/instagram/selfcare.jpg' },
+    { id: 3, title: 'Community', image: 'https://cdn.aigenta.gr/prosleep/instagram/community.jpg' },
+    { id: 4, title: 'Blog', image: 'https://cdn.aigenta.gr/prosleep/instagram/blog.jpg' },
+    { id: 5, title: 'Sleep Polls', image: 'https://cdn.aigenta.gr/prosleep/instagram/sleeppolls.jpg' },
   ];
 
   return (
@@ -43,7 +49,7 @@ const InstagramProfile = () => {
         <div className="flex items-center space-x-4 mb-4">
           <div className="w-20 h-20 rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 p-0.5">
             <img
-              src="https://instagram.fath2-1.fna.fbcdn.net/v/t51.2885-19/120233419_797594231000059_2578888167780984570_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=instagram.fath2-1.fna.fbcdn.net&_nc_cat=107&_nc_oc=Q6cZ2QF7o0p4CGv4fgCyhhMsgGqrT5Em5ubJLivakapDS6ne1UTSCXE1_-UFZqPXeDJDAemeIGc9DkaSFhgeeoh0SfIt&_nc_ohc=BX4DrGh7aCYQ7kNvwF7H3y6&_nc_gid=pGI73_OZ3r-JIp3Ou4-SiA&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AfNJY_zeZ9rI1P8T3Qh_C7PUtkGYzLX7DNn4BMt7ngq3MQ&oe=686C58C1&_nc_sid=7a9f4b"
+              src="https://cdn.aigenta.gr/prosleep/instagram/profile.jpg"
               alt="Profile"
               className="w-full h-full rounded-full object-cover border-2 border-white"
             />
@@ -55,11 +61,11 @@ const InstagramProfile = () => {
                 <div className="text-gray-600 text-sm">posts</div>
               </div>
               <div>
-                <div className="font-semibold text-lg">2.1K</div>
+                <div className="font-semibold text-lg">124.1K</div>
                 <div className="text-gray-600 text-sm">followers</div>
               </div>
               <div>
-                <div className="font-semibold text-lg">1.8K</div>
+                <div className="font-semibold text-lg">735</div>
                 <div className="text-gray-600 text-sm">following</div>
               </div>
             </div>
@@ -71,11 +77,11 @@ const InstagramProfile = () => {
           <h2 className="font-semibold mb-1">ProSleep</h2>
           <p className="text-gray-700 text-sm leading-relaxed">
             📍 Athens, GR<br/>
-            ✨ Content Creator & Photographer<br/>
-            🌟 Living life one adventure at a time<br/>
-            👇 Check out my latest work
+            🏆 Award-Winning Weighted Blankets<br/>
+            🐉 Seen on Dragons' Den<br/>
+            🌖 30-nights trial
           </p>
-          <a href="https://prosleep.gr" className="text-blue-600 text-sm font-medium">prosleep.gr</a>
+          <a href="https://prosleep.gr" className="text-blue-600 text-sm font-medium">🔗prosleep.gr</a>
         </div>
 
         {/* Action Buttons */}
