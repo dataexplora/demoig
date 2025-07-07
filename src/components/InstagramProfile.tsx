@@ -1,6 +1,14 @@
-
 import React from 'react';
-import { Heart, MessageCircle, Send, Bookmark, MoreHorizontal, Grid3X3, User, Users } from 'lucide-react';
+import {
+  Heart,
+  MessageCircle,
+  Send,
+  Bookmark,
+  MoreHorizontal,
+  Grid3X3,
+  User,
+  Users,
+} from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const InstagramProfile = () => {
@@ -17,8 +25,7 @@ const InstagramProfile = () => {
     { id: 10, image: 'https://cdn.aigenta.gr/prosleep/instagram/POSTS/u8736931857_A_luxurious_modern_bedroom_in_a_high-end_Athenian_e78ad03d-91ce-479e-baac-7a6318457751_3.jpg', likes: 276, comments: 18 },
     { id: 11, image: 'https://cdn.aigenta.gr/prosleep/instagram/POSTS/u8736931857_httpss.mj.runL0S_n_4ZOMU_Luxury_private-jet_cabin_bf415395-3c52-460f-91e7-fa114db222fc_3.jpg', likes: 145, comments: 9 },
     { id: 12, image: 'https://cdn.aigenta.gr/prosleep/instagram/POSTS/u8736931857_imagine_organic-modern_cliff-house_bedroom_carved_a92631af-6fa5-4369-933a-d4fb00848848_3 (1).jpg', likes: 203, comments: 11 },
-    { id: 13, image: 'https://cdn.aigenta.gr/prosleep/instagram/POSTS/u8736931857_Sunrise_in_an_ultra-luxury_penthouse_overlooking__01f5b50f-18f2-4e95-9ad5-72d96e8591d9_1.jpg', likes: 167, comments: 7 }
- 
+    { id: 13, image: 'https://cdn.aigenta.gr/prosleep/instagram/POSTS/u8736931857_Sunrise_in_an_ultra-luxury_penthouse_overlooking__01f5b50f-18f2-4e95-9ad5-72d96e8591d9_1.jpg', likes: 167, comments: 7 },
   ];
 
   const stories = [
@@ -37,7 +44,11 @@ const InstagramProfile = () => {
           <h1 className="text-xl font-semibold">prosleep</h1>
           <div className="w-4 h-4 bg-blue-500 rounded-full flex items-center justify-center">
             <svg className="w-2 h-2 text-white" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+              <path
+                fillRule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clipRule="evenodd"
+              />
             </svg>
           </div>
         </div>
@@ -76,12 +87,17 @@ const InstagramProfile = () => {
         <div className="mb-4">
           <h2 className="font-semibold mb-1">ProSleep</h2>
           <p className="text-gray-700 text-sm leading-relaxed">
-            📍 Athens, GR<br/>
-            🏆 Award-Winning Weighted Blankets<br/>
-            🐉 Seen on Dragons' Den<br/>
+            📍 Athens, GR<br />
+            🏆 Award-Winning Weighted Blankets<br />
+            🐉 Seen on Dragons' Den<br />
             🌖 30-nights trial
           </p>
-          <a href="https://prosleep.gr" className="text-blue-600 text-sm font-medium">🔗prosleep.gr</a>
+          <a
+            href="https://prosleep.gr"
+            className="text-blue-600 text-sm font-medium"
+          >
+            🔗prosleep.gr
+          </a>
         </div>
 
         {/* Action Buttons */}
@@ -100,7 +116,10 @@ const InstagramProfile = () => {
         {/* Story Highlights */}
         <div className="flex space-x-4 mb-6 overflow-x-auto pb-2">
           {stories.map((story) => (
-            <div key={story.id} className="flex flex-col items-center space-y-1 min-w-max">
+            <div
+              key={story.id}
+              className="flex flex-col items-center space-y-1 min-w-max"
+            >
               <div className="w-16 h-16 rounded-full bg-gray-200 p-0.5">
                 <img
                   src={story.image}
@@ -124,10 +143,13 @@ const InstagramProfile = () => {
             <Users className="w-6 h-6 mx-auto" />
           </div>
         </div>
-        
+
         <div className="grid grid-cols-3 gap-0.5 bg-gray-100">
           {posts.map((post) => (
-            <div key={post.id} className="aspect-square relative group">
+            <div
+              key={post.id}
+              className="aspect-[4/5] relative group" // <- portrait 4 : 5
+            >
               <img
                 src={post.image}
                 alt={`Post ${post.id}`}
@@ -141,7 +163,9 @@ const InstagramProfile = () => {
                   </div>
                   <div className="flex items-center space-x-1">
                     <MessageCircle className="w-5 h-5 fill-current" />
-                    <span className="text-sm font-semibold">{post.comments}</span>
+                    <span className="text-sm font-semibold">
+                      {post.comments}
+                    </span>
                   </div>
                 </div>
               </div>
